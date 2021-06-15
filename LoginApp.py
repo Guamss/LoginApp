@@ -49,18 +49,14 @@ class MyGrid(GridLayout):
         password = self.password.text
         mycursor.execute("SELECT * FROM User")
         users = mycursor.fetchall()
-        #BOULE FOR NON COMPLETE ! UNIQUEMENT LE IF MARCHE LE ELIF
-        #N'EST PAS ENCORE FINIT ! (Uniquement une connexion avec les 
+        #BOULE FOR NON COMPLETE ! UNIQUEMENT LE IF MARCHE
+        #(Uniquement une connexion avec les 
         #bons identifiants est fonctionnelle)
         for user in users:
             if username == user[0] and password == user[1]:
                 print("Vous êtes connecté!")
                 self.username.text = ""
                 self.password.text = ""
-            elif username != user[0] and password != user[1]:
-                self.error.open()
-            
-        
            
 class LoginApp(App):
     def build(self):
