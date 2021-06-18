@@ -12,9 +12,9 @@ python3 \
 python3-dev \
 `
 install MySQL-connector:
-`
+```
 pip install mysql-connector-python
-`
+```
 and you need to create a database:
 `
 CREATE DATABASE gamedata
