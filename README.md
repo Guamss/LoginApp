@@ -20,5 +20,5 @@ and you need to create a database:
 CREATE DATABASE gamedata
 CREATE TABLE User (username text), (password, text)
 INSERT INTO User (username, password) VALUES ('username', 'password')
-Note : this project is WIP so it isn't complete
 ```
+Note : this project is WIP so it isn't complete
